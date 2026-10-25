@@ -1,114 +1,93 @@
-<!--
-  MAPS — Modern Academy for Professional Solutions
-  Repository documentation for the static landing page in MAPS01/.
--->
+<!-- MAPS: Modern Academy for Professional Solutions -->
 
 <div align="center">
-  <img src="MAPS01/MAPSS01.svg" alt="MAPS — Modern Academy for Professional Solutions" width="180" />
+  <img src="MAPS01/MAPSS01.svg" alt="MAPS logo" width="150" />
 
   <h1>MAPS — Modern Academy for Professional Solutions</h1>
-
   <p><strong>From Learning to Real Impact.</strong></p>
+  <p>Practical technology training, real-world projects, and career-focused learning for engineering students and academic institutions.</p>
 
   <p>
-    Hands-on technology training, practical project experience, expert guidance,
-    and career-oriented learning for engineering students and colleges.
-  </p>
-
-  <p>
-    <a href="#programs">Explore Programs</a> ·
-    <a href="#features">Features</a> ·
-    <a href="#getting-started">Getting Started</a> ·
+    <a href="#about-maps">About</a> ·
+    <a href="#programs">Programs</a> ·
+    <a href="#website-features">Features</a> ·
+    <a href="#run-locally">Run Locally</a> ·
     <a href="#contact">Contact</a>
   </p>
 </div>
 
 ---
 
-## Overview
+## About MAPS
 
-**MAPS (Modern Academy for Professional Solutions)** is a responsive, single-page website for a technology training academy serving engineering students, colleges, and institutions. The landing page introduces MAPS's technical programs, practical learning approach, training formats, intended audiences, mission, and enquiry options.
+**MAPS (Modern Academy for Professional Solutions)** is a technology-training academy website focused on helping engineering students and institutions discover practical, industry-oriented learning opportunities.
 
-The project is built with **HTML, CSS, and vanilla JavaScript**. It does not require a frontend framework, package manager, or build step to run.
+This repository contains the front-end landing page for MAPS. It introduces the academy, highlights its technology programs, explains its hands-on learning approach, outlines workshop and bootcamp formats, and provides a way to contact the team.
 
 ## Programs
 
-The website presents five technology learning tracks:
+The website currently showcases these five learning tracks:
 
-| Program | Focus |
+| Program | Topics highlighted on the website |
 | --- | --- |
-| **Python Full Stack Development** | Python-oriented full-stack development skills |
-| **Generative AI Development** | Building solutions with generative AI technologies |
-| **MERN Stack Development** | Web development with the MERN ecosystem |
-| **Prompt Engineering** | Working effectively with prompts for AI systems |
-| **Internet of Things (IoT)** | Connected devices and IoT concepts |
+| **Python Full Stack Development** | Python, Django, HTML, CSS, JavaScript, and SQL |
+| **Generative AI Development** | Large language models, APIs, Retrieval-Augmented Generation (RAG), and prompt engineering |
+| **MERN Stack Development** | MongoDB, Express.js, React, and Node.js |
+| **Prompt Engineering** | Prompt design, structured outputs, AI tools, and workflows |
+| **Internet of Things (IoT)** | Arduino, ESP32, sensors, and embedded C |
 
-Refer to the website content for the current descriptions and program details.
+Program descriptions and coverage are presented as website content and may change as MAPS updates its offerings.
 
-## Features
+## Website Features
 
-- **Single-page academy website** with dedicated Home, Programs, Our Approach, Workshops, About, and Contact sections.
-- **Responsive navigation** with a mobile menu, close controls, and Escape-key support.
-- **Scroll-aware header** that changes appearance as visitors move down the page.
-- **Active navigation states** to indicate the current section.
-- **Smooth in-page navigation** for section links.
-- **Scroll-triggered reveal animations** powered by the browser's Intersection Observer API.
-- **Interactive program cards** with a subtle pointer-driven tilt effect.
-- **Training format overview** covering college workshops and extended bootcamps.
-- **Audience and mission sections** describing who MAPS serves and the outcomes it aims to support.
-- **Contact calls to action** linking to the academy email address.
+- **Responsive, single-page layout** for desktop and mobile screens.
+- **Navigation menu** with links to the main content sections and a dedicated mobile menu.
+- **Scroll-aware header** and active navigation link styling.
+- **Smooth scrolling** for in-page navigation.
+- **Scroll reveal animations** using the browser's Intersection Observer API.
+- **Interactive program cards** with a subtle mouse-driven tilt effect.
+- **Training delivery section** for college workshops and extended bootcamps.
+- **Learning approach, audience, and mission sections** explaining the academy's focus.
+- **Email-based calls to action** for program enquiries and institutional partnerships.
 - **Automatically updated footer year**.
-- **Custom visual system** using a warm cream background, navy typography, amber accents, and neumorphic surfaces.
-- **Web typography and icons** using Google Fonts (Inter and Outfit) and Bootstrap Icons.
+- **Custom visual identity** built around warm cream, navy blue, amber-gold accents, and neumorphic surfaces.
 
-## Website Preview
+## Technology Stack
 
-The repository includes visual assets used by the landing page. For example, the hero section uses the following image:
+- **HTML5** — semantic page structure and content
+- **CSS3** — responsive layouts, visual styling, design tokens, and transitions
+- **Vanilla JavaScript** — navigation, scrolling, animations, and interactive card behaviour
+- **Google Fonts** — Inter and Outfit
+- **Bootstrap Icons 1.11.3** — interface icons loaded through a CDN
+- **Intersection Observer API** — viewport-based reveal animations
 
-<div align="center">
-  <img src="MAPS01/hero_students.png" alt="Students — hero image used on the MAPS website" width="720" />
-  <p><em>Hero image asset included in the website. This is not a full-page screenshot.</em></p>
-</div>
-
-## Tech Stack
-
-| Technology | Purpose |
-| --- | --- |
-| HTML5 | Page structure and semantic content |
-| CSS3 | Layout, responsive styling, design tokens, transitions, and animations |
-| Vanilla JavaScript (ES6+) | Navigation, scroll behaviour, reveal effects, and interactive cards |
-| Intersection Observer API | Reveal elements as they enter the viewport |
-| Google Fonts | Inter and Outfit typefaces |
-| Bootstrap Icons 1.11.3 | Interface icons delivered through the Bootstrap Icons CDN |
-
-**No React, Vue, Angular, Tailwind, or Node.js build process is required by the current implementation.**
+The current site is a static front-end project. It does not require a framework, backend, package installation, or build step to run.
 
 ## Project Structure
 
 ```text
 MAPS-MODERN-ACADEMY-FOR-PROFESSIONAL-SOLUTIONS/
 └── MAPS01/
-    ├── index.html              # Main landing page and page content
-    ├── style.css               # Design system, layout, responsive styles, and animations
+    ├── index.html              # Main landing page
+    ├── style.css               # Styles, responsive layout, and animations
     ├── script.js               # Navigation and interactive behaviour
-    ├── MAPSS01.svg             # MAPS brand graphic
+    ├── MAPSS01.svg             # MAPS logo
     ├── hero_students.png       # Hero section image
-    ├── workshop_classroom.png  # Workshop image
+    ├── workshop_classroom.png  # College workshop image
     ├── bootcamp_coding.png     # Bootcamp image
-    ├── 001.png                 # Additional visual asset
-    ├── 002.png                 # Additional visual asset
-    └── 0035.png                # Additional visual asset
+    ├── 001.png                 # Additional image asset
+    ├── 002.png                 # Additional image asset
+    └── 0035.png                # Additional image asset
 ```
 
-The HTML references its stylesheet, script, SVG, and image assets using paths relative to the `MAPS01/` directory. Keep these assets in their current locations unless you also update the corresponding references.
+Keep the CSS, JavaScript, logo, and image assets in the `MAPS01/` directory because the HTML references them using relative paths.
 
-## Getting Started
+## Run Locally
 
-### Prerequisites
+### Requirements
 
-- A modern web browser.
-- Optional: [Visual Studio Code](https://code.visualstudio.com/) with the Live Server extension, or Python for running a local static server.
-- Internet access for the Google Fonts and Bootstrap Icons CDN resources. The page's local HTML, CSS, JavaScript, and image files remain in the repository.
+- A modern web browser
+- Optional: Python 3 or Visual Studio Code with the Live Server extension
 
 ### 1. Clone the repository
 
@@ -119,116 +98,62 @@ cd MAPS-MODERN-ACADEMY-FOR-PROFESSIONAL-SOLUTIONS
 
 ### 2. Open the website
 
-**Option A — Open directly**
+**Option A — Open directly:** open `MAPS01/index.html` in your browser.
 
-Open `MAPS01/index.html` in your browser.
-
-**Option B — Run a local server with Python**
-
-From the repository root, run:
+**Option B — Use Python's local server:** run the following from the repository root:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit:
+Then open [http://localhost:8000/MAPS01/](http://localhost:8000/MAPS01/).
 
-```text
-http://localhost:8000/MAPS01/
-```
+**Option C — Use VS Code:** open `MAPS01/index.html` with the Live Server extension.
 
-Stop the server with `Ctrl+C`.
+No `npm install`, environment variables, or build command are required. Google Fonts and Bootstrap Icons need an internet connection to load from their CDNs.
 
-**Option C — Visual Studio Code**
+## Customize the Website
 
-Open the repository in VS Code, install the Live Server extension if needed, then right-click `MAPS01/index.html` and choose **Open with Live Server**.
+- **Page content:** edit `MAPS01/index.html`.
+- **Colours and layout:** edit the CSS variables near the beginning of `MAPS01/style.css`. The main palette variables include `--neu-base`, `--navy`, and `--accent`.
+- **Interactions:** edit `MAPS01/script.js`.
+- **Images and logo:** replace files in `MAPS01/` or update their references in the HTML.
+- **Contact email:** the current site uses `info@mapsacademy.in`. Update the `mailto:` links in `index.html` if the contact address changes.
 
-No `npm install`, build command, or environment file is needed for the current static website.
-
-## How It Works
-
-- `index.html` contains the page structure, copy, navigation, program content, and image references.
-- `style.css` defines the colour palette, typography, neumorphic shadows, responsive layout, component styles, and motion effects.
-- `script.js` manages the mobile navigation, scroll-state header, active navigation links, smooth scrolling, reveal animations, program-card tilt, and current footer year.
-- The Intersection Observer implementation includes a fallback that reveals content immediately in browsers without Intersection Observer support.
-
-## Customization
-
-### Update website content
-
-Edit `MAPS01/index.html` to change headings, program descriptions, training formats, audience information, mission statements, and calls to action.
-
-### Change the visual theme
-
-Edit the CSS custom properties near the beginning of `MAPS01/style.css`. The main design tokens include:
-
-- `--neu-base` — warm cream page background.
-- `--navy-darkest`, `--navy-dark`, and `--navy` — navy brand colours.
-- `--accent` and related accent variables — amber-gold highlights.
-- `--font-head` and `--font-body` — heading and body typefaces.
-
-### Replace images or the brand graphic
-
-Replace the relevant assets in `MAPS01/` and keep the filenames unchanged, or update the matching `src` references in `index.html`. Use appropriately sized, compressed images to help keep the page fast.
-
-### Update contact details
-
-The current page links to **info@mapsacademy.in**. If the academy's contact address changes, update the relevant `mailto:` links in `MAPS01/index.html`.
-
-> **Contact behaviour:** the current page uses email links rather than a backend-powered enquiry form. A working form with message storage or email delivery would require a separate service or backend integration.
+**Contact note:** the current implementation links to email; it does not include a backend-powered contact form or database.
 
 ## Deployment
 
-This is a static website and can be hosted by any service that serves HTML, CSS, JavaScript, and image assets, including GitHub Pages, Netlify, or Cloudflare Pages.
+MAPS is a static website and can be hosted on services such as **GitHub Pages, Netlify, or Cloudflare Pages**.
 
-For a deployment that publishes the current structure, configure the hosting service to publish the repository's `MAPS01/` directory as the site root. If publishing the repository root instead, use a deployment configuration that serves `MAPS01/index.html` as the entry page.
-
-A production URL is not documented here because a verified live deployment URL is not present in the repository content inspected for this README.
-
-## Accessibility and Performance Notes
-
-The current implementation includes responsive navigation controls, ARIA state updates for the mobile menu, and a keyboard Escape handler for closing it. When extending the page, consider maintaining these behaviours and testing keyboard navigation, focus visibility, colour contrast, reduced-motion preferences, and image alternative text.
-
-For performance, optimize the larger PNG assets before adding further imagery. External fonts and icons rely on third-party CDNs.
+Configure the host to publish the contents of the `MAPS01/` directory as the site root, or configure the deployment so that `MAPS01/index.html` is served as the entry page. No server-side runtime is required.
 
 ## Contributing
 
-Suggestions and improvements are welcome.
+Improvements and suggestions are welcome.
 
-1. Fork the repository.
-2. Create a feature branch:
+1. Fork this repository.
+2. Create a branch for your change.
+3. Make your edits and test the page at desktop and mobile widths.
+4. Commit and push your changes.
+5. Open a pull request describing what changed.
 
-   ```bash
-   git checkout -b feature/your-change
-   ```
-
-3. Make your changes and test the page in a browser at desktop and mobile widths.
-4. Commit your work:
-
-   ```bash
-   git add .
-   git commit -m "Describe your change"
-   ```
-
-5. Push your branch and open a pull request with a concise description of the change.
-
-Please keep asset paths valid, avoid adding secrets, and preserve the lightweight static architecture unless a framework or backend is intentionally introduced.
+Please keep asset paths working and preserve the static-site architecture unless a framework or backend is intentionally added.
 
 ## License
 
-No license file was present in the repository files inspected for this README. Until a license is added, do not assume that reuse, redistribution, or modification is permitted. Add a `LICENSE` file if you intend to publish the project under an open-source license.
+No `LICENSE` file was found in the repository when this README was prepared. Unless a license is added, do not assume that the project is open source or that reuse and redistribution are permitted.
 
 ## Contact
 
-For academy enquiries, partnerships, or training discussions:
+For program enquiries, workshops, or institutional partnerships:
 
 - **Email:** [info@mapsacademy.in](mailto:info@mapsacademy.in)
-- **GitHub repository:** [T4x-Dev/MAPS-MODERN-ACADEMY-FOR-PROFESSIONAL-SOLUTIONS](https://github.com/T4x-Dev/MAPS-MODERN-ACADEMY-FOR-PROFESSIONAL-SOLUTIONS)
+- **Repository:** [T4x-Dev/MAPS-MODERN-ACADEMY-FOR-PROFESSIONAL-SOLUTIONS](https://github.com/T4x-Dev/MAPS-MODERN-ACADEMY-FOR-PROFESSIONAL-SOLUTIONS)
 
 ---
 
 <div align="center">
   <strong>MAPS — Modern Academy for Professional Solutions</strong>
-  <br />
-  <em>Learn with purpose. Build with confidence. Grow for the future.</em>
+  <p><em>Learn with purpose. Build with confidence. Grow for the future.</em></p>
 </div>
